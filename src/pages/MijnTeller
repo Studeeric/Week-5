@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="myFunction()"
+    >De teller staat op <a id="teller">1</a>, klik hier om het te verhogen.</button>
+    <script>      
+        let count = 1;
+        function myFunction() {
+          count++;
+          document.getElementById("teller").innerHTML = count;
+        }
+    </script>
+</body>
+</html>

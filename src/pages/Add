@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="waarde">Probleem in opsomming.</h1>
+        <script>
+            window.onload = optellen();
+            function optellen()
+            {
+                var a = new URLSearchParams(window.location.href);
+                let total = 0;
+                for (var b of a.entries()) {
+                    total += parseInt(b[1]);
+                }
+                console.log(total);
+                document.getElementById("waarde").innerHTML = total;
+            } 
+        </script>
+    </body>
+</html>

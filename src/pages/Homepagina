@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Welkom bij de website van Pretpark <a href="https://nl.wikipedia.org/wiki/Den_Haag">Den Haag</a>!</h1>
+    <p>Jij gebruikt <a id="user-agent-string"></a>.</p>
+    <p><a href="Contact">Contact</a></p>
+    <p>Hier is de <a href="Teller">link</a> naar de teller. </p>
+
+    <script>
+        let agent = navigator.userAgent;
+        document.getElementById("user-agent-string").innerHTML = agent;
+    </script>
+</body>
+
+</html>
